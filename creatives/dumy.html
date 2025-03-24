@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Carousel</title>
+
+    <!-- jQuery (necessary for OwlCarousel) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Tilt.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <!-- Custom Styles -->
+    <style>
+    .base-template__wrapper {
+	max-width: 100dvw;
+	padding-bottom: 50px;
+}
+
+/**
+ * Slider Instance
+ */
+
+.swiper {
+	width: 100%;
+}
+
+.swiper-wrapper {
+	transition-timing-function: linear !important;
+}
+
+.swiper-slide {
+	height: auto !important;
+}
+
+.horizontal-ticker {
+	margin: 0 -20px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 2.85vw;
+}
+
+@media screen and (max-width: 767.9px) {
+	.horizontal-ticker {
+		row-gap: 15px;
+	}
+}
+
+/**
+ * Slider Slides
+ */
+
+.horizontal-ticker__slide {
+	position: relative;
+	width: 15.625vw;
+	aspect-ratio: 300 / 205;
+	border-radius: 10px;
+	overflow: hidden;
+	backdrop-filter: blur(50px);
+}
+
+@media screen and (max-width: 767.9px) {
+	.horizontal-ticker__slide {
+		width: 150px;
+	}
+}
+
+.horizontal-ticker__slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: opacity 0.6s ease-out;
+}
+
+.horizontal-ticker__slide img:last-child {
+	position: absolute;
+	inset: 0;
+	opacity: 0;
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.horizontal-ticker__slide:hover img:last-child {
+		opacity: 1;
+	}
+}
+
+
+    </style>
+</head>
+<body>
+
+    <div class="preview">
+        <img src="https://bato-web-agency.github.io/bato-shared/img/horizontal-ticker-preview.jpg?v=1.4">
+    </div>
+    
+    <section class="base-template">
+        <div class="wrapper base-template__wrapper">
+            <h1 class="base-template__title">
+                A World of Trusted Brands
+            </h1>
+            <div class="base-template__text">
+                A seamless continuous ticker of trusted brand logos, showcasing <br> the power of partnership with smooth scrolling and hover effects
+            </div>
+    
+            <div class="base-template__content">
+                <div class="horizontal-ticker">
+    
+                 
+    
+    
+                    <!-- Horizontal Ticker: Slider LTR -->
+    
+                    <div id="horizontal-ticker-ltr" class="swiper horizontal-ticker__slider">
+                        <div class="swiper-wrapper">
+    
+                            <div class="swiper-slide horizontal-ticker__slide">
+                                <img src="https://bato-web-agency.github.io/bato-shared/img/ticker-1/image-7-0.svg" alt="Daikin">
+                                <img src="https://bato-web-agency.github.io/bato-shared/img/ticker-1/image-7-1.svg" alt="Daikin">
+                            </div>
+    
+                            <div class="swiper-slide horizontal-ticker__slide">
+                                <img src="https://bato-web-agency.github.io/bato-shared/img/ticker-1/image-8-0.svg" alt="Kyocera">
+                                <img src="https://bato-web-agency.github.io/bato-shared/img/ticker-1/image-8-1.svg" alt="Kyocera">
+                            </div>
+    
+                            <div class="swiper-slide horizontal-ticker__slide">
+                                <img src="https://bato-web-agency.github.io/bato-shared/img/ticker-1/image-9-0.svg" alt="Omron">
+                                <img src="https://bato-web-agency.github.io/bato-shared/img/ticker-1/image-9-1.svg" alt="Omron">
+                            </div>
+    
+                            <div class="swiper-slide horizontal-ticker__slide">
+                                <img src="https://bato-web-agency.github.io/bato-shared/img/ticker-1/image-10-0.svg" alt="Hoya">
+                                <img src="https://bato-web-agency.github.io/bato-shared/img/ticker-1/image-10-1.svg" alt="Hoya">
+                            </div>
+    
+                            <div class="swiper-slide horizontal-ticker__slide">
+                                <img src="https://bato-web-agency.github.io/bato-shared/img/ticker-1/image-11-0.svg" alt="Olympus">
+                                <img src="https://bato-web-agency.github.io/bato-shared/img/ticker-1/image-11-1.svg" alt="Olympus">
+                            </div>
+    
+                            <div class="swiper-slide horizontal-ticker__slide">
+                                <img src="https://bato-web-agency.github.io/bato-shared/img/ticker-1/image-12-0.svg" alt="Fujikura">
+                                <img src="https://bato-web-agency.github.io/bato-shared/img/ticker-1/image-12-1.svg" alt="Fujikura">
+                            </div>
+    
+                            <!-- slides copies -->
+    
+                            <div class="swiper-slide horizontal-ticker__slide">
+                                <img src="https://bato-web-agency.github.io/bato-shared/img/ticker-1/image-7-0.svg" alt="Daikin">
+                                <img src="https://bato-web-agency.github.io/bato-shared/img/ticker-1/image-7-1.svg" alt="Daikin">
+                            </div>
+    
+                            <div class="swiper-slide horizontal-ticker__slide">
+                                <img src="https://bato-web-agency.github.io/bato-shared/img/ticker-1/image-8-0.svg" alt="Kyocera">
+                                <img src="https://bato-web-agency.github.io/bato-shared/img/ticker-1/image-8-1.svg" alt="Kyocera">
+                            </div>
+    
+                            <div class="swiper-slide horizontal-ticker__slide">
+                                <img src="https://bato-web-agency.github.io/bato-shared/img/ticker-1/image-9-0.svg" alt="Omron">
+                                <img src="https://bato-web-agency.github.io/bato-shared/img/ticker-1/image-9-1.svg" alt="Omron">
+                            </div>
+    
+                            <div class="swiper-slide horizontal-ticker__slide">
+                                <img src="https://bato-web-agency.github.io/bato-shared/img/ticker-1/image-10-0.svg" alt="Hoya">
+                                <img src="https://bato-web-agency.github.io/bato-shared/img/ticker-1/image-10-1.svg" alt="Hoya">
+                            </div>
+    
+                            <div class="swiper-slide horizontal-ticker__slide">
+                                <img src="https://bato-web-agency.github.io/bato-shared/img/ticker-1/image-11-0.svg" alt="Olympus">
+                                <img src="https://bato-web-agency.github.io/bato-shared/img/ticker-1/image-11-1.svg" alt="Olympus">
+                            </div>
+    
+                            <div class="swiper-slide horizontal-ticker__slide">
+                                <img src="https://bato-web-agency.github.io/bato-shared/img/ticker-1/image-12-0.svg" alt="Fujikura">
+                                <img src="https://bato-web-agency.github.io/bato-shared/img/ticker-1/image-12-1.svg" alt="Fujikura">
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+	const isDesktop = () => window.innerWidth > 767.9;
+
+	let gap = 15;
+
+	if (isDesktop()) gap = 0.0285 * window.innerWidth;
+
+	const sliders = [];
+
+	["#horizontal-ticker-rtl", "#horizontal-ticker-ltr"].forEach(
+		(query, index) => {
+			sliders.push(
+				new Swiper(query, {
+					loop: true,
+					slidesPerView: "auto",
+					spaceBetween: gap,
+					speed: 8000,
+					allowTouchMove: false,
+					autoplay: {
+						delay: 0,
+						reverseDirection: index,
+						disableOnInteraction: false
+					}
+				})
+			);
+		}
+	);
+
+	window.addEventListener("resize", () => {
+		isDesktop() ? (gap = 0.0285 * window.innerWidth) : (gap = 15);
+
+		sliders.forEach((slider) => {
+			slider.params.spaceBetween = gap;
+			slider.update();
+		});
+	});
+});
+
+</script>
+
+</body>
+</html>

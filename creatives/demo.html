@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Header with Smooth Scroll</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Reset some default styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth; /* Smooth scrolling */
+        }
+
+        /* General styling for the header */
+        nav {
+            background-color: #333;
+            width: 100%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: top 0.3s;
+        }
+
+        nav .wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .logo a {
+            color: #fff;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        /* Styling for the menu button and close button */
+        .btn {
+            font-size: 28px;
+            color: #fff;
+            cursor: pointer;
+            display: none;
+        }
+
+        /* Navigation links styling */
+        .nav-links {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links li {
+            position: relative;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        /* Dropdown Menu */
+        .drop-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #444;
+            list-style-type: none;
+            padding: 10px;
+        }
+
+        .drop-menu li a {
+            padding: 10px;
+        }
+
+        .nav-links li:hover .drop-menu {
+            display: block;
+        }
+
+        /* Mega Menu */
+        .mega-box {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #444;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            z-index: 100;
+        }
+
+        .mega-box .content {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .mega-links {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .mega-links li a {
+            padding: 10px;
+            display: block;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .mega-box .row {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .nav-links li:hover .mega-box {
+            display: block;
+        }
+
+        /* Media query for mobile */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                background-color: #333;
+                width: 100%;
+                flex-direction: column;
+                gap: 0;
+                padding: 10px;
+            }
+
+            .nav-links li {
+                padding: 10px;
+                text-align: center;
+            }
+
+            .nav-links.show {
+                display: flex;
+            }
+
+            .btn.menu-btn, .btn.close-btn {
+                display: block;
+            }
+
+            .menu-btn {
+                display: inline-block;
+            }
+
+            .close-btn {
+                display: inline-block;
+            }
+
+            .nav-links li a {
+                padding: 10px;
+                font-size: 18px;
+            }
+        }
+
+        /* Smooth scroll on anchor links */
+        a {
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #ff6347; /* Change color on hover */
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href="#">Logo</a></div>
+            <input type="radio" name="slider" id="menu-btn">
+            <input type="radio" name="slider" id="close-btn">
+            <ul class="nav-links">
+                <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li>
+                    <a href="#" class="desktop-item">Dropdown Menu</a>
+                    <input type="checkbox" id="showDrop">
+                    <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+                    <ul class="drop-menu">
+                        <li><a href="#">Drop menu 1</a></li>
+                        <li><a href="#">Drop menu 2</a></li>
+                        <li><a href="#">Drop menu 3</a></li>
+                        <li><a href="#">Drop menu 4</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="desktop-item">Mega Menu</a>
+                    <input type="checkbox" id="showMega">
+                    <label for="showMega" class="mobile-item">Mega Menu</label>
+                    <div class="mega-box">
+                        <div class="content">
+                            <div class="row">
+                                <img src="https://fadzrinmadu.github.io/hosted-assets/responsive-mega-menu-and-dropdown-menu-using-only-html-and-css/img.jpg" alt="">
+                            </div>
+                            <div class="row">
+                                <header>Design Services</header>
+                                <ul class="mega-links">
+                                    <li><a href="#">Graphics</a></li>
+                                    <li><a href="#">Vectors</a></li>
+                                    <li><a href="#">Business cards</a></li>
+                                    <li><a href="#">Custom logo</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <header>Email Services</header>
+                                <ul class="mega-links">
+                                    <li><a href="#">Personal Email</a></li>
+                                    <li><a href="#">Business Email</a></li>
+                                    <li><a href="#">Mobile Email</a></li>
+                                    <li><a href="#">Web Marketing</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <header>Security services</header>
+                                <ul class="mega-links">
+                                    <li><a href="#">Site Seal</a></li>
+                                    <li><a href="#">VPS Hosting</a></li>
+                                    <li><a href="#">Privacy Seal</a></li>
+                                    <li><a href="#">Website design</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">Feedback</a></li>
+            </ul>
+            <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+        </div>
+    </nav>
+
+    <div style="height: 2000px; padding-top: 60px;">
+        <h1>Scroll Down</h1>
+        <p>This is an example page to showcase the sticky header and smooth scroll effect.</p>
+    </div>
+
+    <script>
+        // JavaScript for opening and closing the menu on mobile
+        const menuBtn = document.getElementById('menu-btn');
+        const closeBtn = document.getElementById('close-btn');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuBtn.addEventListener('change', () => {
+            navLinks.classList.add('show');
+        });
+
+        closeBtn.addEventListener('change', () => {
+            navLinks.classList.remove('show');
+        });
+    </script>
+
+</body>
+</html>
