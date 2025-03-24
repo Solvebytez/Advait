@@ -1746,6 +1746,11 @@ h3.para {
 }
 
 /* Custom CSS to move the navigation buttons to the top */
+.owl-theme .owl-nav [class*=owl-]:hover {
+  background: none !important;  /* Removes background on hover */
+  color: inherit !important;    /* Removes color change on hover */
+  text-decoration: none !important;  /* Removes text decoration on hover */
+}
 .owl-nav {
   position: absolute;
   top: 0;
