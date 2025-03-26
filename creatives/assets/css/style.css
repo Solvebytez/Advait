@@ -123,14 +123,7 @@ to {
 	  font: bold 2em 'Montserrat', sans-serif;
 	}}
 
- /*responsive*/
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    .abt-main-we-do {
-        display: flex
-;
-        flex-direction: column;
-    }
-}
+
 
 /* navbar */
 nav {
@@ -808,15 +801,23 @@ p {
 /* Parent Container for Cards */
 .abt-main-we-do {
   display: flex;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;
   justify-content: space-between;
   gap: 20px;
-  /* Space between the cards */
+   Space between the cards
   margin: 0 auto;
   padding-top: 3rem;
-  max-width: 1200px;
+  max-width: 1200px; */
   /* Prevent cards from stretching too much on large screens */
 
+}
+ /*responsive*/
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    .abt-main-we-do {
+        display: flex
+;
+        flex-direction: column;
+    }
 }
 
 /* Card Styles */
