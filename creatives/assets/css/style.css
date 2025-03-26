@@ -1054,9 +1054,6 @@ h1.bold-font-bg {
     justify-content: space-between;
   }
 
-  .Products .col-lg-4 {
-    width: 33.33%;
-  }
 }
 
 /* Small screen and mobile-first: Stack cards vertically */
