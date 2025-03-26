@@ -144,7 +144,7 @@ to {
 		margin-top:12px;
 		margin-bottom:4px;
 	}
-	font-size:22px;
+	
 }
  @media (max-width: 768px) {
    
@@ -2422,6 +2422,11 @@ a.random-posts__item:hover .blog-info-cnt h4 {
   font-size: 40px;
   font-weight: 800;
   color: #fff;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .right-txt-get h1 {
+        font-size:22px;
+    }
 }
 
 /*=======================================
