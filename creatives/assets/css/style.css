@@ -1760,7 +1760,7 @@ h3.para {
   z-index: 10;
 }
 .owl-nav {
-  display: block !important;
+  display: none !important;
   position: absolute;
   top: -130px;
   right: -34rem;
