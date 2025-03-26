@@ -135,12 +135,8 @@ to {
         margin-bottom: 16px;
         width: 50%;
     }
-	.Get_in_touch{
-		padding:30px 0;
-	}
-	.get-in-tittle h1{
-		font-size:34px;
-	}
+	
+	
 	.right-txt-get{
 		padding-left:0px;
 	}
@@ -2385,6 +2381,11 @@ a.random-posts__item:hover .blog-info-cnt h4 {
   background: linear-gradient(90deg, #1b1646 0, #2bc0fc 100%);
   padding: 3rem 0rem;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .Get_in_touch {
+        padding: 30px 0;
+    }
+}
 .get-in-tittle h1, .right-txt-get h1 {
   color: #fff !important;
 }
@@ -2394,6 +2395,9 @@ a.random-posts__item:hover .blog-info-cnt h4 {
   font-weight: 800;
   font-size: 56px;
 }
+.get-in-tittle h1{
+		font-size:34px;
+	}
 .get-in-tittle p {
   color: #fff;
 }
