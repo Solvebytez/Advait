@@ -123,6 +123,15 @@ to {
 	  font: bold 2em 'Montserrat', sans-serif;
 	}}
 
+ /*responsive*/
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    .abt-main-we-do {
+        display: flex
+;
+        flex-direction: column;
+    }
+}
+
 /* navbar */
 nav {
  /* position: fixed;*/
@@ -812,15 +821,15 @@ p {
 
 /* Card Styles */
 .about-x-home {
-  background-color: #fff;
+ /* background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 10px;
   overflow: hidden;
   width: 100%;
   max-width: 320px;
-  /* Max width of each card */
+   Max width of each card
   padding: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
   transition: transform 0.3s ease;
 }
 
