@@ -131,6 +131,10 @@ to {
 	 #projects-slider .owl-carousel .owl-item {
       width: 50%; /* 2 items */
     }
+	    .Blog_section .col-lg-4 {
+        margin-bottom: 16px;
+        width: 50%;
+    }
 }
  @media (max-width: 768px) {
    
