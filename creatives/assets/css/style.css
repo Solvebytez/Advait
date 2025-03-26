@@ -878,7 +878,7 @@ p {
 @media screen and (min-width: 769px) and (max-width: 1024px) {
 
   .abt-icon-x {
-    max-width: 45%;
+    max-width: 20%;
     /* Two cards per row on tablets */
   }
 }
