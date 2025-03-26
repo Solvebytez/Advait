@@ -135,6 +135,9 @@ to {
         margin-bottom: 16px;
         width: 50%;
     }
+	.Get_in_touch{
+		padding:30px 0;
+	}
 }
  @media (max-width: 768px) {
    
