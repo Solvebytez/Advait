@@ -128,7 +128,13 @@ to {
         margin-bottom: 16px;
         width: 50%;
     }
+	 #projects-slider .owl-carousel .owl-item {
+      width: 50%; /* 2 items */
+    }
 }
+ @media (max-width: 768px) {
+   
+  }
 
 
 
