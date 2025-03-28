@@ -160,7 +160,7 @@ nav {
   z-index: 99;
   width: 100%;
 
-  background: #242526;
+  background: #243665;
 }
 
 nav .wrapper {
@@ -946,7 +946,7 @@ div.product-card-in {
   font-size: 1.75rem !important;
   line-height: 2.5rem !important;
   font-weight: 700 !important;
-  color: rgba(24, 24, 24, 1) !important;
+  color:#243665 !important;
   /* Corrected the color property */
 }
 
@@ -974,11 +974,11 @@ span.pd-sub-info {
 .link-product-btn p {
   font-size: 14px;
   font-weight: 500;
-  color: #1c1849;
+  color: #8bd8bd;
 }
 
 .product-card-in:hover .product-card-data h2 {
-  color: #42adde !important;
+  color:#8bd8bd !important;
 }
 
 .product-card-in:hover .product-card-data h2 {
@@ -1016,8 +1016,8 @@ span.pd-sub-info {
   transform: translateY(-50%);
   width: 30px;
   height: 30px;
-  background: linear-gradient(221.4deg, #2DACDF -41.46%, #ffffff 102.64%);
-  /* background: #007bff; */
+  /*background: linear-gradient(221.4deg, #2DACDF -41.46%, #ffffff 102.64%);*/
+   background: #8bd8bd; 
   border-radius: 50%;
   animation: bubble-animation 2s infinite;
   z-index: -1;
@@ -1134,7 +1134,7 @@ h1.bold-font-bg {
 }
 
 .sl-card-dec h3 {
-  color: #2a3349;
+  color: #8bd8bd;
   font-size: 20px;
   font-weight: 700;
   line-height: 150%;
@@ -1163,7 +1163,7 @@ h1.bold-font-bg {
 
 .box-pin.solution-card:hover a h3,
 .hv-tl:hover h3 span {
-  color: #42adde !important;
+  color: #243665 !important;
 }
 
 .btn-explore1 {
@@ -1209,7 +1209,7 @@ h1.bold-font-bg {
 .btn-explore1:hover:after,
 .btn-explore:hover:after {
   left: 73px;
-  background: #38b0e1;
+  background: #8bd8bd;
 }
 
 .btn-explore1:hover svg path,
