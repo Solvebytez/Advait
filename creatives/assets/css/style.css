@@ -1523,7 +1523,7 @@ h3.para {
   background-image: radial-gradient(circle, rgb(255 255 255) 0%, rgb(220 225 255 / 20%) 50%, rgb(220 224 255 / 8%) 100%);
 }
 .card-innerx .boxx .iconx .iconBoxx:hover {
-    background-color: #2ab5ef !important;
+    background-color: #8bd8bd !important;
     rotate: 45deg;
 }
 .post-slide {
@@ -1981,7 +1981,7 @@ background:#24366561;
 .card-innerx .boxx .iconx .iconBoxx {
   position: absolute;
   inset: .625rem;
-  background: #1b1646;
+  background: #243665;
   border-radius: 50%;
   display: flex
 ;
