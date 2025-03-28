@@ -1134,7 +1134,7 @@ h1.bold-font-bg {
 }
 
 .sl-card-dec h3 {
-  color: #8bd8bd;
+  color: #243665;
   font-size: 20px;
   font-weight: 700;
   line-height: 150%;
@@ -1163,7 +1163,7 @@ h1.bold-font-bg {
 
 .box-pin.solution-card:hover a h3,
 .hv-tl:hover h3 span {
-  color: #243665 !important;
+  color: #8bd8bd !important;
 }
 
 .btn-explore1 {
