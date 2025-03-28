@@ -2337,7 +2337,7 @@ span.text-date {
   text-transform: capitalize;
 }
 a.random-posts__item:hover .blog-info-cnt h4 {
-  color: #54aeda;
+  color: #243665;
 }
 .blog-info-cnt p {
   color: #3f3f3f;
@@ -2380,8 +2380,8 @@ a.random-posts__item:hover .blog-info-cnt h4 {
 }
 
 .Get_in_touch {
-  background: linear-gradient(90deg, #1b1646 0, #2bc0fc 100%);
-  padding: 3rem 0rem;
+    background: linear-gradient(90deg, #243665 0, #8bd8bd 100%);
+    padding: 3rem 0rem;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .Get_in_touch {
