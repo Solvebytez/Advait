@@ -2158,7 +2158,7 @@ background:#24366561;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #0c0c0c;
+  background: #243665;
   color: #fff;
   font-size: 1.3em;
   transition: all .3s ease-in-out 0s;
@@ -2235,7 +2235,7 @@ html[dir=rtl] .blog-meta-two .date {
 }
 
 .btn-four.inverse, .btn-four:focus, .btn-four:hover {
-  background: #1b1646;
+  background: #8bd8bd;
 }
 
 .rounded-circle {
