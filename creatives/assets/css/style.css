@@ -1292,7 +1292,7 @@ h1.bold-font-bg {
 }
 
 .wp-block-button.is-style-button-right-arrow {
-  background: #ffffff00;
+  background: #8bd8bd;
   border: 1px solid #fff;
   position: relative;
   overflow: hidden;
@@ -1768,7 +1768,8 @@ h3.para {
   right: 0;
   width: 23.375%;
   height: 100%;
-  background: linear-gradient(45deg, #b6e0f4 0%, #49acdb 33%, #49acdb 67%, #fff 100%);
+ /* background: linear-gradient(45deg, #b6e0f4 0%, #49acdb 33%, #49acdb 67%, #fff 100%);\*/
+background:#24366514;
   opacity: .15;
   content: "";
 }
@@ -1782,6 +1783,7 @@ h3.para {
 .call-act-box {
   padding: 50px 57px 54px;
   background: linear-gradient(356deg, rgb(73 172 219) -.75%, rgb(220 244 255) 99.55%);
+  background: linear-gradient(356deg, #8bd8bd -0.75%, #cbf3ea59 99.55%);
   border-radius: 16px;
   position: relative;
   overflow: hidden;
