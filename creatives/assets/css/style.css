@@ -1302,8 +1302,8 @@ h1.bold-font-bg {
 }
 
 .wp-block-button.is-style-button-right-arrow {
-  background: #8bd8bd;
-  border: 1px solid #fff;
+  /*background: #8bd8bd;
+  border: 1px solid #fff;*/
   position: relative;
   overflow: hidden;
   width: auto;
