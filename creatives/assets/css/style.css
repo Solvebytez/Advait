@@ -1302,8 +1302,8 @@ h1.bold-font-bg {
 }
 
 .wp-block-button.is-style-button-right-arrow {
-  /*background: #8bd8bd;
-  border: 1px solid #fff;*/
+  background: #8bd8bd;
+  border: 1px solid #fff;
   position: relative;
   overflow: hidden;
   width: auto;
@@ -1767,6 +1767,24 @@ h3.para {
 /*================================================
 0.7 index-contact
 ================================================*/
+button.nav-link {
+    color: #000;
+}
+button.nav-link {
+    color: #000;   
+}
+.nav-link:focus, .nav-link:hover{
+  background-color: #1a4275 !important;
+  color: #fff !important;
+  border-radius: 20px !important;
+}
+li.nav-item {
+    margin-right: 8px;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+  background-color: #1a4275 !important;  
+   border-radius: 20px !important;
+}
 .call-to-action {
   padding: 3rem 0px;
   position: relative;
