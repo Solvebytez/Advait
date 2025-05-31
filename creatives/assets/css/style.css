@@ -106,12 +106,8 @@ to {
 	.container-preloader .animation-preloader .spinner {
 	height: 8em;
 	width: 8em;
-	}
+	}	
 	
-	.image-container{
-	  position: inherit;
-          top: 3rem;
-	}
 	/* Text Loading */
 	.container-preloader .animation-preloader .txt-loading {
 	  font: bold 3.5em 'Montserrat', sans-serif;
@@ -133,10 +129,7 @@ to {
         margin-bottom: 16px;
         width: 50%;
     }
-	.image-container{
-	  position: inherit;
-          top: 3rem;
-	}
+	
 	 #projects-slider .owl-carousel .owl-item {
       width: 50%; /* 2 items */
     }
@@ -155,13 +148,7 @@ to {
 	}
 	
 }
- @media (max-width: 768px) {
-   
-	.image-container{
-	  position: inherit;
-          top: 3rem;
-	}
-  }
+
 
 
 
@@ -811,6 +798,13 @@ button:focus {
   min-width: 250px;
   /* Ensure image container has a minimum width */
 }
+ @media (max-width: 768px) {
+   
+	.image-container{
+	  position: inherit;
+          top: 3rem;
+	}
+  }
 
 .sticky-image {
   width: 100%;
