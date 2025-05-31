@@ -107,6 +107,11 @@ to {
 	height: 8em;
 	width: 8em;
 	}
+	
+	.image-container{
+	  position: inherit;
+          top: 3rem;
+	}
 	/* Text Loading */
 	.container-preloader .animation-preloader .txt-loading {
 	  font: bold 3.5em 'Montserrat', sans-serif;
@@ -152,6 +157,10 @@ to {
 }
  @media (max-width: 768px) {
    
+	.image-container{
+	  position: inherit;
+          top: 3rem;
+	}
   }
 
 
