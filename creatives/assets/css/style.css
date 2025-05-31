@@ -2470,6 +2470,12 @@ a.random-posts__item:hover .blog-info-cnt h4 {
     .right-txt-get h1 {
         font-size:22px;
     }
+	.right-txt-get {
+  text-align: inherit;
+}
+.right-txt-get {
+  padding-left: inherit;
+}
 }
 
 /*=======================================
