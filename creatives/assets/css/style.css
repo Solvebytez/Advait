@@ -1781,6 +1781,10 @@ button.nav-link {
 li.nav-item {
     margin-right: 8px;
 }
+ul#pills-tab {
+    border-top: 1px solid #f5d041;
+    border-bottom: 1px solid #f5d041;
+}
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
   background-color: #1a4275 !important;  
    border-radius: 20px !important;
