@@ -1020,9 +1020,9 @@ span.pd-sub-info {
 }
 
 .heading_tg {
-  position: relative;
-  text-align: left;
-  padding: 40px 0;
+    position: relative;
+    text-align: left;
+    padding: 36px 0 23px 0;
 }
 
 /* Bubble behind the text */
