@@ -2470,6 +2470,10 @@ a.random-posts__item:hover .blog-info-cnt h4 {
     .right-txt-get h1 {
         font-size:22px;
     }
+	
+}
+@media screen and (max-width: 768px) {
+
 	.right-txt-get {
   text-align: inherit;
 }
