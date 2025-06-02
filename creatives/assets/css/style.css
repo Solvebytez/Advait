@@ -2581,11 +2581,12 @@ a.random-posts__item:hover .blog-info-cnt h4 {
 
 
 .footer {
-  width: 100%;
-  padding: 40px 0 5px;
-  overflow: hidden;
-  position: relative
-  
+    width: 100%;
+    padding: 40px 0 5px;
+    overflow: hidden;
+    position: relative;
+    border-top: 1px solid;
+    margin-top: 4rem;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
