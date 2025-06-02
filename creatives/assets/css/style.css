@@ -1459,7 +1459,7 @@ section.counters {
   height: 92%;
   left: 0;
   bottom: 0;
-  background: rgb(255, 252, 242);
+  /*background: rgb(255, 252, 242);*/
   content: "";
   position: absolute;
   z-index: -1;
