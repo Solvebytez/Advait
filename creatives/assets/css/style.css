@@ -1509,6 +1509,9 @@ a.mt-auto {
     font-weight: 700; 
     font-size: 35px;  
 }
+section.page-header.position-relative.overflow-hidden.ptb-120.bg-dark {
+    background-color: rgb(26 66 117) !important;
+}
 
 
 .ptb-120 {
