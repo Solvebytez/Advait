@@ -1072,7 +1072,7 @@ h1.bold-font-bg {
   letter-spacing: -.16px;
   font-weight: 700;
   line-height: 130%;
-  color: #2a3349;
+  color: #fff;
   text-transform: capitalize;
 }
 
@@ -1430,7 +1430,90 @@ a.wp-block-button__link:hover {
 /*============================================
 0.6 Awards-section
 ===========================================*/
+.position-relative {
+    position: relative !important;
+}
 
+.overflow-hidden {
+    overflow: hidden !important;
+}
+.circle-shape-3 {
+    bottom: -210px;
+    width: 300px;
+    min-height: 300px;
+    min-width: 300px;
+}
+.bg-dark-light {
+    background-color: #f5d04169;
+}
+.left-5 {
+    left: 5%;
+}
+.rounded-circle {
+    border-radius: 50% !important;
+}
+.position-absolute {
+    position: absolute !important;
+}
+.circle-shape-1 {
+    top: -240px;
+    width: 356px;
+    min-height: 356px;
+    min-width: 356px;
+}
+.bg-warning {
+    background-color: #FFC300 !important;
+}
+.right-5 {
+    right: 5%;
+}
+.rounded-circle {
+    border-radius: 50% !important;
+}
+.section-heading {
+    margin-bottom: 50px;
+    color: #ffffff;
+}
+.lead {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #fff;
+}
+.lead-title{
+  color: #ffffff;
+ font-weight: 800;
+}
+.custom-shadow {
+    box-shadow: 0 5px 20px 0 rgba(210, 210, 245, 0.5);
+}
+.contact-us-promo span {
+    line-height: normal;
+    margin-bottom: 30px;
+}
+p.contact-p {
+    color: #6c6c6c;
+    font-size: 16px;
+}
+a.mt-auto {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+.contact-us-img img {
+    width: 100%;
+    max-width: 90%;
+}
+.section-headings H3 {
+    margin-bottom: 5px;
+    color: #000000; 
+    font-weight: 700; 
+    font-size: 35px;  
+}
+
+
+.ptb-120 {
+    padding: 120px 0;
+}
 /*.counters {
 	background: #0f479a;
 	color: #fff;
