@@ -11,6 +11,14 @@ body {
   font-size: 14px;
   overflow-x: hidden;
 }
+#canvas {
+  position: absolute;
+  z-index: 11;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
 /* Preloader */
 .container-preloader {
 	align-items:center; cursor:none; display:flex; height:100%;
