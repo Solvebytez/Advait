@@ -1719,6 +1719,21 @@ button.form-submit {
     border-radius: 5px;
     color: #fff;
 }
+.followUs ul li a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);  
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.9s ease;
+}
+ul.Follow-link {
+    padding-left: 0px;
+    margin-left: -15px;
+}
 section.page-header.position-relative.overflow-hidden.ptb-120.bg-dark {
     background-color: rgb(26 66 117) !important;
 }
