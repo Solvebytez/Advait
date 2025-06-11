@@ -2735,7 +2735,7 @@ a.random-posts__item:hover .blog-info-cnt h4 {
 .Get_in_touch {
     background: linear-gradient(90deg, #f5d041 0, #f5d041 100%);
     padding: 3rem 0rem;
-    background: #1a4275;
+    background: #f5d041;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .Get_in_touch {
