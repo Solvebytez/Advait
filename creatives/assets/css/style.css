@@ -976,8 +976,8 @@ div.product-card-in {
 }
 
 a[_ngcontent-serverApp-c12] {
-  text-decoration: none;
-  color:#fff;
+    text-decoration: none;
+    color: #1a4275;
 }
 
 .product-card-data p {
@@ -2743,7 +2743,7 @@ a.random-posts__item:hover .blog-info-cnt h4 {
     }
 }
 .get-in-tittle h1, .right-txt-get h1 {
-  color: #fff !important;
+    color: #1a4275 !important;
 }
 
 .get-in-tittle h1 {
