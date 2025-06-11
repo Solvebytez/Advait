@@ -2770,9 +2770,6 @@ a.random-posts__item:hover .blog-info-cnt h4 {
   display: block;
   color: #fff;
 }
-.get-in-tittle h1, .right-txt-get h1 {
-  color: #fff !important;
-}
 
 .right-txt-get h1 {
   font-size: 40px;
