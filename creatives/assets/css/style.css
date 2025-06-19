@@ -4220,12 +4220,12 @@ left, .footer-layout1 .shape-right {
 }
 .footer-contact_text {
     display: block;
-    color: white;
+    color: #1a4275;
     margin-bottom: 5px;
 }
 .footer-contact_link {
     display: inline-block;
-    color:white;
+    color:#1a4275;
     font-size: 20px;
     font-weight: 600;
 }
@@ -4272,7 +4272,7 @@ left, .footer-layout1 .shape-right {
     content: "";
     height: 100%;
     width: 100%;
-    background-color: black;
+    background-color: #1a4275;
     border-radius: inherit;
     position: absolute;
     top: -10px;
