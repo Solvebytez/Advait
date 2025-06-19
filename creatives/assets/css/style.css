@@ -2755,6 +2755,12 @@ a.random-posts__item:hover .blog-info-cnt h4 {
 .get-in-tittle h1, .right-txt-get h1 {
     color: #1a4275 !important;
 }
+.tp-faq-img {
+    position: absolute;
+    bottom: -52%;
+    left: 33%;
+    z-index: 2;
+}
 
 .get-in-tittle h1 {
   color: #fff;
