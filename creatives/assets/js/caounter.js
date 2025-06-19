@@ -1,46 +1,37 @@
+  document.addEventListener("DOMContentLoaded", function () {
+    const counters = document.querySelectorAll('.counter');
+    const speed = 200;
 
-const counters = document.querySelectorAll('.counter');
-const speed = 200; // The lower the slower
+    const animateCounter = (counter) => {
+      const target = +counter.getAttribute('data-target');
+      let count = 0;
 
-// Function to start counting when the element is in view
-const startCounting = (counter) => {
-    const updateCount = () => {
-        const target = +counter.getAttribute('data-target');
-        const count = +counter.innerText;
-
-        // Lower inc to slow and higher to slow
-        const inc = target / speed;
-
-        // Check if target is reached
+      const updateCount = () => {
+        const increment = target / speed;
         if (count < target) {
-            // Add inc to count and output in counter
-            counter.innerText = Math.ceil(count + inc);
-            // Call function every ms
-            setTimeout(updateCount, 1);
+          count += increment;
+          counter.innerText = Math.ceil(count);
+          setTimeout(updateCount, 10);
         } else {
-            counter.innerText = target;
+          counter.innerText = target;
         }
+      };
+
+      updateCount();
     };
 
-    updateCount();
-};
-
-// IntersectionObserver to trigger counter start when visible
-const observerOptions = {
-    threshold: 0.5 // This means 50% of the element should be visible
-};
-
-const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
         if (entry.isIntersecting) {
-            // Start counting when the element is in view
-            startCounting(entry.target);
-            observer.unobserve(entry.target); // Stop observing after counting starts
+          animateCounter(entry.target);
+          observer.unobserve(entry.target); // Animate only once
         }
+      });
+    }, {
+      threshold: 0.5 // You can adjust this value
     });
-}, observerOptions);
 
-// Observe each counter element
-counters.forEach(counter => {
-    observer.observe(counter);
-});
+    counters.forEach(counter => {
+      observer.observe(counter);
+    });
+  });
