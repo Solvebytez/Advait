@@ -4277,7 +4277,7 @@ left, .footer-layout1 .shape-right {
     text-align: center;
     position: relative;
 }
-.footer-contact_icon:before {
+/*.footer-contact_icon:before {
     content: "";
     height: 100%;
     width: 100%;
@@ -4289,7 +4289,7 @@ left, .footer-layout1 .shape-right {
     z-index: -1;
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
-}
+}*/
 .footer-widget, .footer-widget .widget {
     padding: 0;
     border: none;
