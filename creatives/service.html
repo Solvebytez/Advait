@@ -32,675 +32,13 @@
   <!-- Bootstrap (Optional, for Layout) -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-  <style>
-    section.atb-contact.section-boxed.elementor-section-height-default.elementor-section-height-default {
-      background-image: url(https://wordpress.themeholy.com/webteck/wp-content/uploads/2024/01/cta_bg_3.jpg);
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-
-    section.atb-work-proces {
-      background-color: #F5F5F5;
-      background-image: url(../creatives/assets/img/process_bg_1.webp);
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-
-    .elementor-widget-wrap.elementor-element-populated {
-      padding: 120px 12px 120px 12px;
-    }
-
-    .elementor-widget-wrap.elementor-element-populate {
-      padding: 50px 12px 50px 12px;
-    }
-
-    .elementor-widget-wrap {
-      align-content: flex-start;
-      flex-wrap: wrap;
-      position: relative;
-      width: 100%;
-    }
-
-    .shadow-title {
-      font-family: sans-serif;
-      font-size: 74px;
-      font-weight: 900;
-      line-height: 1;
-      background-image: linear-gradient(180deg, rgb(226 232 250 / .7) 0%, #fff0 88.54%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: #fff0;
-      background-clip: text;
-      margin: -.55em 0 -.45em -.25em;
-    }
-
-    .sub-title {
-      position: relative;
-      display: block;
-      font-size: 16px;
-      font-weight: 600;
-      color: #1a4275;
-      margin-bottom: 30px;
-      text-transform: uppercase;
-      line-height: 24px;
-      margin-top: -.34em;
-    }
-
-    .sec-title {
-      margin-top: -.32em;
-      text-transform: capitalize;
-    }
-
-    .elementor-widget-wrap>.elementor-element {
-      width: 100%;
-    }
-
-    .process-card-area .process-line {
-      position: absolute;
-      /*left: 0;*/
-      bottom: 95px;
-      width: 100%;
-      text-align: center;
-    }
-
-    .process-card-wrap {
-      padding: 30px 0 0 30px;
-    }
-
-    .process-card {
-      position: relative;
-      box-shadow: 0 10px 15px rgb(8 14 28 / .06);
-      border-radius: 10px;
-      background-color: white;
-      text-align: center;
-      padding: 10px 20px 25px 20px;
-
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .process-card_number,
-    .process-card .pulse {
-      height: 60px;
-      width: 60px;
-      line-height: 60px;
-      background-color: #1a4275;
-      border-radius: 50%;
-      text-align: center;
-      position: absolute;
-      top: -30px;
-      left: -30px;
-      z-index: 2;
-      font-size: 36px;
-      font-weight: 700;
-      color: white;
-    }
-
-    .process-card_number {
-      height: 37px;
-      width: 37px;
-      line-height: 35px;
-      background-color: #6a42ff;
-      border-radius: 50%;
-      text-align: center;
-      color: #fff;
-      font-weight: 700;
-      font-size: 18px;
-      position: relative;
-      animation: pulse 2.5s ease-out infinite;
-    }
-
-    @keyframes pulse {
-      0% {
-        box-shadow: 0 0 0 0 rgba(107, 66, 255, 0.568);
-        -webkit-transform: scale(1);
-        transform: scale(1);
-      }
-
-      100% {
-        box-shadow: 0 0 0 15px rgba(107, 66, 255, 0);
-        -webkit-transform: scale(1.2);
-        transform: scale(1.4);
-      }
-    }
-
-    .process-card_number:after,
-    .process-card .pulse:after {
-      -webkit-animation-delay: 3.5s;
-      animation-delay: 3.5s
-    }
-
-    .process-card .box-title {
-      font-weight: 600;
-      margin-bottom: 14px;
-    }
-
-    .box-title {
-      font-size: 24px;
-      line-height: 1.417;
-      font-weight: 700;
-      margin-top: -.32em;
-    }
-
-    .process-card_icon {
-      margin-bottom: 24px;
-    }
-
-    /* Hover effect */
-    .service-card:hover .bg-overlay {
-      opacity: 0.15;
-      /* adjust opacity as needed */
-    }
-
-    /*service*/
-    .all-service {
-      padding: 60px 0 36px;
-     
-    }
-.all-service .container {
-  position: relative;
-}
-
-.shape-1 {
-    position: absolute;
-    top: -5rem;
-    right: -4rem;
-    z-index: -1;
-    pointer-events: none;
-}
-
-.shape-2 {
-    position: absolute;
-    bottom: -3rem;
-    left: -3rem;
-    z-index: -1;
-    pointer-events: none;
-}
-.shape-2 img {
-    width: 100%;
-    max-width: 62%;
-}
-
-.shape-1 img{
-    /* adjust size if needed */
-  height: auto;
-}
-    .service-main {
-      margin-top: 45px;
-      padding-bottom: 3rem;
-    }
-
-    .service-main .more-space {
-      margin-bottom: 24px;
-    }
-
-    .service-outer {
-      outline: 1px solid transparent;
-      box-shadow: 0px 0px 10px rgba(0 0 0 / 10%);
-      padding: 25px 15px;
-      height: 100%;
-      transition: all ease-in-out 0.25s;
-      -webkit-transition: all ease-in-out 0.25s;
-      -moz-transition: all ease-in-out 0.25s;
-      -ms-transition: all ease-in-out 0.25s;
-      overflow: hidden;
-    }
-
-    .service-outer:before {
-      position: absolute;
-      top: -10px;
-      right: -10px;
-      width: 90px;
-      height: 90px;
-      display: block;
-      content: "";
-      background: #1a4275;
-      border-radius: 0px 0px 0px 100px;
-      z-index: 1;
-      transition: all ease-in-out 0.55s;
-      -webkit-transition: all ease-in-out 0.55s;
-      -moz-transition: all ease-in-out 0.55s;
-      -ms-transition: all ease-in-out 0.55s;
-    }
-
-    .service-outer:hover:before {
-      background: #fcb149;
-      width: 100%;
-      height: 100%;
-      border-radius: 0px;
-      top: 0;
-      right: 0;
-    }
-
-    .service-outer .service-about {
-      transition: all ease-in-out 0.25s;
-      -webkit-transition: all ease-in-out 0.25s;
-      -moz-transition: all ease-in-out 0.25s;
-      -ms-transition: all ease-in-out 0.25s;
-    }
-
-    .service-outer:hover .service-about {
-      opacity: 0;
-      visibility: hidden;
-    }
-
-    .service-outer .img-outer {
-      margin-bottom: 15px;
-    }
-
-    .service-outer .service-detail {
-      padding: 10px 15px;
-      position: absolute;
-      top: 0;
-      left: 0px;
-      opacity: 0;
-      visibility: hidden;
-      transition: all ease-in-out 1s;
-      -webkit-transition: all ease-in-out 1s;
-      -moz-transition: all ease-in-out 1s;
-      -ms-transition: all ease-in-out 1s;
-      z-index: 2;
-      height: 100%;
-      width: 100%;
-      display: flex;
-      align-items: center;
-    }
-
-    .service-outer:hover .service-detail {
-      opacity: 1;
-      visibility: visible;
-    }
-
-    .service-outer .service-detail:before,
-    .service-outer .service-detail:after {
-      position: absolute;
-      top: 14px;
-      left: 7px;
-      display: block;
-      content: "";
-      width: 47px;
-      height: 45px;
-      background: url(./assets/top-left.webp) no-repeat top left;
-      background-size: 47px 45px;
-    }
-
-    .service-outer .service-detail:after {
-      top: auto;
-      left: auto;
-      bottom: 14px;
-      right: 7px;
-      width: 47px;
-      height: 45px;
-      background: url(./assets/bottom-right.webp) no-repeat bottom right;
-      background-size: 47px 45px;
-    }
-
-    .service-outer .service-detail ul {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      margin-top: 1rem;
-      padding-left: 0.5rem !important;
-    }
-
-    .service-outer .service-detail li {
-      margin-bottom: 16px;
-      width: 48%;
-      margin-right: 4%;
-      list-style: none;
-    }
-
-    .service-outer .service-detail li:nth-of-type(2n+2) {
-      margin-right: 0;
-    }
-
-    .service-outer .service-detail li:nth-of-type(5),
-    .service-outer .service-detail li:last-of-type {
-      margin-bottom: 0px;
-    }
-
-    .service-detail .detail-inner {
-      background-color: #1a4275;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      /* padding: 10px;*/
-      position: relative;
-      box-shadow: 0px 13px 7px -10px rgba(0 0 0 / 80%);
-      overflow: hidden;
-      border-width: 2px 2px 0px;
-      border-style: solid;
-      border-color: #1a4275;
-    }
-
-    li.more-space a {
-      text-decoration: none;
-    }
-
-    .service-detail .detail-inner:before {
-      position: absolute;
-      top: 14px;
-      left: 0;
-      display: block;
-      margin-top: -9px;
-      content: "1";
-      font-size: 67px;
-      color: #ffffff1a;
-      /* z-index: 0; */
-      font-weight: 900;
-      line-height: 0.7;
-      text-shadow: -4px 0px 0px rgba(0 0 0 / 10%);
-    }
-
-    .service-detail .detail-inner.detail-two:before {
-      content: "2";
-    }
-
-    .service-detail .detail-inner.detail-three:before {
-      content: "3";
-    }
-
-    .service-detail .detail-inner.detail-four:before {
-      content: "4";
-    }
-
-    .service-detail .detail-inner.detail-five:before {
-      content: "5";
-    }
-
-    .service-detail .detail-inner.detail-six:before {
-      content: "6";
-    }
-
-    .service-detail .detail-inner * {
-      color: #fff;
-      position: relative;
-      z-index: 1;
-      max-width: 132px;
-      margin-left: 3rem;
-    }
-
-    .shape-mockup {
-      position: absolute;
-      z-index: -1;
-    }
-
-    /*servive all*/
-    .service-card {
-      padding: 40px;
-      position: relative;
-      z-index: 2;
-      box-shadow: 0 10px 30px rgb(8 14 28 / .06);
-      background-color: white;
-      border-radius: 10px;
-      overflow: hidden;
-      -webkit-transition: 0.4s ease-in-out;
-      transition: 0.4s ease-in-out;
-    }
-
-    .service-card:before {
-      bottom: -73px;
-      right: -28px;
-    }
-
-    .service-card:before,
-    .service-card:after {
-      content: '';
-      position: absolute;
-      height: 110px;
-      width: 110px;
-      background-color: red;
-      opacity: .6;
-      border-radius: 50%;
-      -webkit-transition: 0.4s ease-in-out;
-      transition: 0.4s ease-in-out;
-      z-index: -1;
-    }
-
-    .service-card_number {
-      position: absolute;
-      top: 25px;
-      right: 40px;
-      font-size: 100px;
-      line-height: 1;
-      font-weight: 700;
-      color: rgb(144, 182, 238);
-      opacity: .3;
-    }
-
-    .service-card .shape-icon {
-      margin-bottom: 30px;
-    }
-
-    .shape-icon {
-      position: relative;
-      z-index: 2;
-      width: 90px;
-      height: 85px;
-      line-height: 85px;
-      text-align: center;
-    }
-
-    .shape-icon:before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background-color: #e2e8fa;
-      clip-path: path("M4.76563 19.2144C-2.32686 32.07 -1.20075 48.6639 6.14105 61.3767C16.4024 79.1459 38.9816 89.016 58.6174 83.4451C78.2532 77.8741 92.5688 56.7417 89.6127 36.3982C84.2306 -0.647078 23.3991 -14.559 4.76563 19.2144Z");
-      z-index: -1;
-      transition: 0.4s ease-in-out;
-    }
-
-    .shape-icon .dots:before,
-    .shape-icon .dots:after {
-      content: '';
-      position: absolute;
-      background-color: #1a4275;
-      height: 24px;
-      width: 23px;
-      border-radius: 50%
-    }
-
-    .shape-icon .dots:before {
-      top: 0;
-      right: 9px
-    }
-
-    .shape-icon .dots:after {
-      height: 12px;
-      width: 11px;
-      bottom: 0;
-      left: 27px
-    }
-
-    .service-featured {
-      text-align: center;
-      position: relative;
-      z-index: 2
-    }
-
-    .service-featured:before {
-      content: '';
-      height: 180px;
-      width: 100%;
-      background-color: red;
-      position: absolute;
-      top: 50%;
-      left: 0;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-      border-radius: 10px;
-      z-index: -1;
-      -webkit-transition: 0.4s ease-in-out;
-      transition: 0.4s ease-in-out
-    }
-
-    .service-featured .shape-icon {
-      margin: 0 auto 30px auto
-    }
-
-    .service-featured .icon-btn {
-      border-radius: 99px;
-      background-color: blue;
-      box-shadow: 0 6px 20px rgb(0 96 255 / .5);
-      border: none;
-      color: white;
-      position: absolute;
-      bottom: -28px;
-      left: calc(50% - 28px)
-    }
-
-    .service-featured .icon-btn:hover {
-      background-color: var(--white-color);
-      color: blueviolet
-    }
-
-    .service-featured_content {
-      background-color: white;
-      max-width: 312px;
-      box-shadow: 0 10px 30px rgb(8 14 28 / .06);
-      border-radius: 10px;
-      margin-left: auto;
-      margin-right: auto;
-      padding: 40px 15px 28px 15px;
-      margin-bottom: 28px
-    }
-
-    .service-featured_text {
-      max-width: 255px;
-      margin: 0 auto 31px auto
-    }
-
-    .service-card {
-      padding: 40px;
-      position: relative;
-      z-index: 2;
-      box-shadow: 0 10px 30px rgb(8 14 28 / .06);
-      background-color: white;
-      border-radius: 10px;
-      overflow: hidden;
-      -webkit-transition: 0.4s ease-in-out;
-      transition: 0.4s ease-in-out
-    }
-
-    .service-card:before,
-    .service-card:after {
-      content: '';
-      position: absolute;
-      background-color: #1a4275;
-      transition: 0.4s ease-in-out;
-      z-index: -1;
-    }
-
-    .service-card:before {
-      bottom: -73px;
-      right: -28px
-    }
-
-    .service-card:after {
-      right: -73px;
-      bottom: -28px
-    }
-
-    .service-card .shape-icon {
-      margin-bottom: 30px
-    }
-
-
-    .service-card .bg-shape {
-      position: absolute;
-      bottom: -200px;
-      left: 0;
-      width: 100%;
-      opacity: 0;
-      -webkit-transition: 0.4s ease-in-out;
-      transition: 0.4s ease-in-out;
-      pointer-events: none
-    }
-
-    .service-card .bg-shape img {
-      width: 100%
-    }
-
-    .service-card_number {
-      position: absolute;
-      top: 25px;
-      right: 40px;
-      font-size: 100px;
-      line-height: 1;
-      font-weight: 700;
-      color: #f5d041;
-      opacity: .3;
-    }
-
-    .box-title a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    .service-card_text {
-      -webkit-transition: 0.4s ease-in-out;
-      transition: 0.4s ease-in-out;
-      margin-bottom: 22px
-    }
-
-
-
-    .service-card:hover {
-      width: 100%
-    }
-
-    .service-card:hover:before,
-    .service-card:hover:after {
-      opacity: 1;
-      height: 120%;
-      width: 120%;
-      border-radius: 0
-    }
-
-    .service-card:hover .shape-icon:before {
-      background-color: white
-    }
-
-    .service-card:hover .bg-shape {
-      bottom: 0;
-      opacity: 1
-    }
-
-    .title-area-wrap {
-      width: 100%;
-    }
-
-    .service-card:hover .box-title {
-      color: white
-    }
-
-
-    .service-card:hover .service-card_text {
-      color: white
-    }
-
-    .service-sec {
-      background-size: auto;
-      background-position: top center;
-      background-color: red
-    }
-
-    @media (max-width: 375px) {
-      .service-card {
-        padding: 40px 30px
-      }
-    }
-  </style>
+  
 
 </head>
 
 <body>
   <!-- header start -->
-  <nav>
+ <nav>
     <div class="wrapper">
       <div class="logo"><a href="index.html"><img src="./assets/img/logo.png" alt="" srcset=""></a></div>
       <input type="radio" name="slider" id="menu-btn">
@@ -708,22 +46,22 @@
       <ul class="nav-links">
         <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
         <li><a href="index.html">Home</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="about-us.html">About</a></li>
         <li>
-          <a href="#" class="desktop-item">Dropdown Menu</a>
+          <a href="#" class="desktop-item">Services</a>
           <input type="checkbox" id="showDrop">
-          <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+          <label for="showDrop" class="mobile-item">Services</label>
           <ul class="drop-menu">
-            <li><a href="#">Drop menu 1</a></li>
-            <li><a href="#">Drop menu 2</a></li>
+            <li><a href="service.html">service</a></li>
+            <li><a href="service-details.html">service-details</a></li>
             <li><a href="#">Drop menu 3</a></li>
             <li><a href="#">Drop menu 4</a></li>
           </ul>
         </li>
         <li>
-          <a href="#" class="desktop-item">Mega Menu</a>
+          <a href="#" class="desktop-item">Services</a>
           <input type="checkbox" id="showMega">
-          <label for="showMega" class="mobile-item">Mega Menu</label>
+          <label for="showMega" class="mobile-item">Services</label>
           <div class="mega-box">
             <div class="content">
               <div class="row">
@@ -732,9 +70,9 @@
                   alt="">
               </div>
               <div class="row">
-                <header>Design Services</header>
+                <header>Web-Development</header>
                 <ul class="mega-links">
-                  <li><a href="#">Graphics</a></li>
+                  <li><a href="web-development.html">Graphics</a></li>
                   <li><a href="#">Vectors</a></li>
                   <li><a href="#">Business cards</a></li>
                   <li><a href="#">Custom logo</a></li>
@@ -820,10 +158,10 @@
   <!--All service-start-->
   <div class="all-service">
     <div class="container">
-         <!-- shape-1 -->
-    <div class="shape-1">
-      <img src="https://wordpress.themeholy.com/webteck/wp-content/uploads/2024/01/tech_shape_1.png" alt="Shape 1">
-    </div>
+      <!-- shape-1 -->
+      <div class="shape-1">
+        <img src="https://wordpress.themeholy.com/webteck/wp-content/uploads/2024/01/tech_shape_1.png" alt="Shape 1">
+      </div>
       <div _ngcontent-serverapp-c12="" class="row mb-4">
         <div _ngcontent-serverapp-c12="" class="col-lg-6">
           <div _ngcontent-serverapp-c12="" data-aos="fade-up" data-aos-duration="1000"
@@ -837,7 +175,7 @@
         </div>
         <div _ngcontent-serverapp-c12="" class="col-lg-6"></div>
       </div>
-   
+
       <div class="service-main">
         <div class="row">
           <div class="col-lg-4 col-md-6 col-12 more-space">
@@ -1391,14 +729,14 @@
           </div>
         </div>
       </div>
-       <!-- shape-2 -->
-    <div class="shape-2">
-      <img src="https://wordpress.themeholy.com/webteck/wp-content/uploads/2024/01/tech_shape_2.png" alt="Shape 2">
-    </div>
+      <!-- shape-2 -->
+      <div class="shape-2">
+        <img src="https://wordpress.themeholy.com/webteck/wp-content/uploads/2024/01/tech_shape_2.png" alt="Shape 2">
+      </div>
     </div>
   </div>
   <!--All-service-end-->
- <!--<section
+  <!--<section
     class="elementor-section elementor-top-section elementor-element elementor-element-1967ce0e elementor-section-boxed elementor-section-height-default elementor-section-height-default"
     data-id="1967ce0e" data-element_type="section">
     <div class="elementor-container elementor-column-gap-default">
@@ -1630,12 +968,12 @@
     <div class="elementor-container elementor-column-gap-default">
       <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3d6d25a9"
         data-id="3d6d25a9" data-element_type="column">
-        <div class="elementor-widget-wrap elementor-element-populated">
+        <div class="atb-elementor-element-populated">
           <div
             class="elementor-element elementor-element-540bed30 elementor-widget__width-initial ms-auto me-auto elementor-widget elementor-widget-tragasectiontitle"
             data-id="540bed30" data-element_type="widget" data-widget_type="tragasectiontitle.default">
             <div class="elementor-widget-container">
-              <div class="title-area-wrap text-center">
+              <div class="title-area-wraps text-center">
                 <div class="title-area"><span class="sub-title subtitle-selector"><img decoding="async"
                       src="https://wordpress.themeholy.com/webteck/wp-content/uploads/2024/02/title_shape_2.svg"
                       alt="Webteck" class="icon me-2 text-center"> CONTACT US</span>
@@ -1681,15 +1019,21 @@
                   <div
                     class="elementor-element elementor-element-5d8293ac elementor-widget elementor-widget-tragasectiontitle"
                     data-id="5d8293ac" data-element_type="widget" data-widget_type="tragasectiontitle.default">
-                    <div class="elementor-widget-container">
+                    <div class="container">
                       <div class="title-area-wrap">
-                        <div class="title-area text-center">
-                          <div class="shadow-title">PROCESS</div><span class="sub-title subtitle-selector"><img
-                              decoding="async"
-                              src="https://wordpress.themeholy.com/webteck/wp-content/uploads/2024/02/title_shape_2.svg"
-                              alt="Webteck" class="icon me-2"> WORK PROCESS</span>
+                        <div class="title-area ">
+                          <div class="shadow-title">PROCESS</div>
+                          <span class="sub-title">
+                            <div _ngcontent-serverapp-c12="" class="animation-bubble left-0" id="atb-animation">
+                            </div>
+                            <h6 _ngcontent-serverapp-c12="" class="uppercase-text-small" id="atb-six">work &amp;
+                              process</h6>
+                          </span>
                           <h2 class="sec-title title-selector fw-bold">How to work <span class="text-theme">it!</span>
                           </h2>
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum eveniet quae rerum,
+                            deleniti exercitationem delectus nobis possimus reiciendis eligendi et modi aspernatur
+                            praesentium! Mollitia perspiciatis iste quod esse aliquam et.</p>
                         </div>
                       </div>
                     </div>
